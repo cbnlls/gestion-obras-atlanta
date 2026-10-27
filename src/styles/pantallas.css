@@ -1,0 +1,93 @@
+/* PANTALLAS · Piezas propias que Bootstrap no trae */
+
+/* ---- tarjetas KPI ---- */
+.kpi .k-val{font-family:var(--f-head);font-weight:700;font-size:30px;line-height:1}
+.kpi .k-lab{font-size:.65rem;letter-spacing:.07em;font-weight:600;text-transform:uppercase}
+.kpi .k-ic{width:28px;height:28px;border-radius:7px;display:inline-grid;place-items:center}
+.kpi-dark{background:var(--side)!important;border-color:var(--side)!important;color:#fff}
+.kpi-dark .text-body-secondary{color:#8c98b3!important}
+.kpi-dark .k-ic{background:#1b2338!important;color:var(--accent)!important}
+
+/* ---- mis obras ---- */
+.obra-card{font:inherit;color:inherit;background:var(--bs-card-bg)}
+.obra-card:hover{border-color:var(--bs-border-color-translucent);box-shadow:var(--bs-box-shadow-sm)}
+
+/* ---- ficha técnica ---- */
+.hero-av .big{font-family:var(--f-head);font-weight:700;font-size:46px;line-height:.9}
+.hero-av .big em{font-style:normal;font-size:34px}
+.hero-av .mid,.hero-av .neg,.hero-av .pos{font-family:var(--f-head);font-weight:700;font-size:28px;line-height:1}
+.hero-av .mid{color:var(--bs-secondary-color)}.hero-av .neg{color:var(--bs-danger)}.hero-av .pos{color:var(--bs-success)}
+.hero-av small{display:block;color:var(--bs-secondary-color);font-size:11px;margin-top:3px}
+.track{position:relative;height:9px;border-radius:99px;background:var(--bs-border-color);margin-top:26px}
+.track .fill{height:100%;border-radius:99px;background:linear-gradient(90deg,#d98200,var(--accent))}
+.track .mk{position:absolute;top:-6px;width:2px;height:21px;background:var(--bs-body-color);transform:translateX(-1px)}
+.track .mk span{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);background:var(--side);color:#fff;font-size:10px;font-weight:600;padding:3px 7px;border-radius:5px;white-space:nowrap}
+.scale{display:flex;justify-content:space-between;margin-top:8px;font-family:var(--bs-font-monospace);font-size:10px;color:var(--bs-secondary-color)}
+.fbox>.row:last-child{border-bottom:0!important}
+.etiqueta{font-size:.62rem;letter-spacing:.07em;color:var(--bs-secondary-color);font-weight:600;text-transform:uppercase;margin-bottom:5px}
+.celda b{font-family:var(--f-head);font-size:16px}
+@media (min-width:768px){.celda:not(:last-child){border-right:1px solid var(--bs-border-color)}}
+
+/* ---- valorizaciones ---- */
+.vd-head{background:var(--side);color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:center;font-weight:600}
+.vd-head button{background:none;border:0;color:#8c98b3;display:flex;gap:6px;align-items:center;font-size:12px}
+.vb{--c:var(--c-blue);border:1px solid color-mix(in srgb,var(--c) 28%,transparent);background:color-mix(in srgb,var(--c) 7%,var(--bs-body-bg));border-radius:10px;overflow:hidden;display:flex;flex-direction:column;height:100%}
+.vb.purple{--c:var(--c-purple)}.vb.teal{--c:var(--bs-success)}.vb.orange{--c:var(--c-orange)}.vb.green{--c:var(--bs-success)}.vb.red{--c:var(--bs-danger)}
+.vb-h{display:flex;gap:8px;align-items:center;padding:11px 14px 8px;color:var(--c);font-weight:700;font-size:11px;letter-spacing:.04em;text-transform:uppercase}
+.vb-h b{font-family:var(--f-head);font-size:24px;line-height:1;padding-right:8px;border-right:3px solid var(--c)}
+.vb-b{padding:4px 14px 10px;flex:1;min-height:56px}
+.vb-b div{display:flex;justify-content:space-between;font-size:12px;padding:3px 0;color:var(--bs-secondary-color)}
+.vb-b div span:last-child{font-family:var(--bs-font-monospace);color:var(--bs-body-color);font-size:11.5px}
+.vb-b p{font-size:11.5px;color:var(--bs-secondary-color);padding-top:6px;margin:0}
+.vb-t{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-top:1px solid color-mix(in srgb,var(--c) 22%,transparent);background:color-mix(in srgb,var(--c) 11%,var(--bs-body-bg))}
+.vb-t small{font-size:10px;letter-spacing:.06em;color:var(--c);font-weight:700}
+.vb-t strong{font-family:var(--f-head);font-size:22px;color:var(--c)}
+.vsum{margin:0 16px 16px;background:var(--side);border:1px solid var(--accent);border-radius:12px;padding:18px 22px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;color:#fff}
+.vsum .items{display:flex;gap:22px;flex-wrap:wrap}
+.vsum small{display:block;font-size:10px;color:#8c98b3;margin-bottom:2px}
+.vsum .items span{font-family:var(--bs-font-monospace);font-size:11.5px}
+.vsum .pay{text-align:right}
+.vsum .pay small{color:var(--accent);font-weight:700;letter-spacing:.06em;font-size:11px}
+.vsum .pay strong{font-family:var(--f-head);font-size:38px;color:var(--accent);line-height:1}
+.tot-row td{font-weight:700;border-top:2px solid var(--bs-border-color)!important}
+
+/* ---- avance físico ---- */
+.tint-g{background:color-mix(in srgb,var(--bs-success) 8%,var(--bs-body-bg))!important}
+.tint-y{background:color-mix(in srgb,var(--accent) 10%,var(--bs-body-bg))!important}
+.tabla tr.tot td{background:var(--side)!important;color:#fff;font-weight:700;border-top:0}
+.tabla tr.tot td.gd{background:#14532d!important}
+.tabla tr.tot td.bd{background:#7c3e0f!important}
+
+/* ---- calendario valorizado: una sola tabla continua ---- */
+.cal-scroll{overflow:auto;max-height:calc(100vh - 230px)}
+.cal{border-collapse:separate;border-spacing:0;font-size:11.5px;table-layout:fixed}
+.cal th{position:sticky;top:0;z-index:2;background:var(--side);color:#fff;font-size:10px;letter-spacing:.05em;text-transform:uppercase;padding:9px 10px;text-align:left;white-space:nowrap}
+.cal th.m{color:var(--accent);text-align:right}.cal th.r{text-align:right}
+.cal th .dias{font-weight:400;font-size:9px;opacity:.8;letter-spacing:0;text-transform:none}
+.cal td{padding:8px 10px;border-bottom:1px solid var(--bs-border-color);vertical-align:middle;background:var(--bs-body-bg)}
+.cal td:nth-child(1),.cal th:nth-child(1){position:sticky;left:0;z-index:1}
+.cal td:nth-child(2),.cal th:nth-child(2){position:sticky;left:100px;z-index:1;white-space:normal;word-break:break-word}
+.cal th:nth-child(1),.cal th:nth-child(2){z-index:3}
+.cal tr.cap td{background:color-mix(in srgb,var(--bs-primary) 9%,var(--bs-body-bg));font-weight:700}
+.cal tr.sub td{background:var(--bs-tertiary-bg);font-weight:700}
+.cal td.num{text-align:right;font-family:var(--bs-font-monospace);white-space:nowrap}
+.cal td.mc{text-align:right;font-family:var(--bs-font-monospace);cursor:pointer;white-space:nowrap}
+.cal td.mc.has{background:color-mix(in srgb,var(--accent) 22%,var(--bs-body-bg))}
+.cal td.mc:hover{outline:1px dashed var(--accent);outline-offset:-2px}
+.cal td.mc.nil{color:var(--bs-secondary-color)}
+.cal td.warn{color:var(--bs-danger);font-weight:600}
+.cal .pp{font:400 9.5px var(--bs-body-font-family);color:var(--bs-secondary-color);margin-top:1px}
+.cal .pp.ok{color:var(--bs-success)}.cal .pp.bad{color:var(--bs-danger);font-weight:600}
+.cal td.code{white-space:nowrap}
+.cal tr.part .code{padding-left:20px}
+.cal tfoot td{background:var(--side);color:#fff;font-family:var(--bs-font-monospace);font-weight:600;border-bottom:1px solid #1b2438}
+.cal tfoot td.desc{font-family:var(--bs-body-font-family);letter-spacing:.04em}
+.cal tfoot tr.eco-sub td{background:#10182b;color:var(--accent)}
+
+/* ---- avance físico: celda de programación editable ---- */
+.edit-prog{cursor:pointer}.edit-prog:hover{outline:1px dashed var(--accent);outline-offset:-2px}
+.ref{font:400 9.5px var(--bs-body-font-family);color:var(--bs-secondary-color)}
+
+/* ---- cartas de fianza ---- */
+.row-venc>td{background:color-mix(in srgb,var(--bs-danger) 10%,var(--bs-body-bg))!important}
+.row-warn>td{background:color-mix(in srgb,var(--accent) 16%,var(--bs-body-bg))!important}

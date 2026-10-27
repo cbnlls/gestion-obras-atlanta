@@ -1,0 +1,38 @@
+/* TEMA · Personaliza Bootstrap (colores, fuentes, modo oscuro).
+   Se carga DESPUÉS de bootstrap.min.css. Aquí se cambia la paleta de toda la app. */
+:root{
+  --bs-body-font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --bs-body-font-size:.8125rem;
+  --bs-font-monospace:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --bs-warning:#f59e0b;--bs-warning-rgb:245,158,11;
+  --f-head:'Barlow Condensed','Arial Narrow',sans-serif;
+  --side:#080d1a;--side-2:#121a2d;--side-text:#97a3bd;--side-line:#1b2438;
+  --accent:#f59e0b;--accent-ink:#1a1204;
+}
+[data-bs-theme=light]{--bs-tertiary-bg:#eff1f5;--accent-text:#b45309;--c-purple:#7c3aed;--c-orange:#c2410c}
+[data-bs-theme=dark]{--bs-body-bg:#131a2a;--bs-tertiary-bg:#0b101c;--bs-secondary-bg:#18213a;--bs-border-color:#243049;--accent-text:#fbbf24;--c-purple:#a78bfa;--c-orange:#fb923c}
+
+/* nombres cortos usados por los estilos propios (apuntan a variables de Bootstrap) */
+:root,[data-bs-theme]{
+  --surface:var(--bs-body-bg);--surface-2:var(--bs-tertiary-bg);--text:var(--bs-body-color);--muted:var(--bs-secondary-color);
+  --border:var(--bs-border-color);--c-blue:var(--bs-primary);--c-green:var(--bs-success);--c-red:var(--bs-danger);
+}
+
+/* botón principal ámbar */
+.btn-warning{--bs-btn-color:#1a1204;--bs-btn-bg:#f59e0b;--bs-btn-border-color:#f59e0b;--bs-btn-hover-color:#1a1204;--bs-btn-hover-bg:#e08a00;--bs-btn-hover-border-color:#e08a00;--bs-btn-active-color:#1a1204;--bs-btn-active-bg:#d97706;--bs-btn-active-border-color:#d97706;--bs-btn-disabled-color:#1a1204;--bs-btn-disabled-bg:#f59e0b;--bs-btn-disabled-border-color:#f59e0b;--bs-btn-focus-shadow-rgb:245,158,11;font-weight:600}
+.btn-outline-warning{--bs-btn-color:var(--accent-text);--bs-btn-border-color:#f59e0b;--bs-btn-hover-color:#1a1204;--bs-btn-hover-bg:#f59e0b;--bs-btn-hover-border-color:#f59e0b;--bs-btn-active-color:#1a1204;--bs-btn-active-bg:#f59e0b;--bs-btn-active-border-color:#f59e0b}
+.btn{font-weight:600;--bs-btn-font-size:.8125rem}
+.btn-sm{--bs-btn-font-size:.75rem}
+
+/* utilidades propias */
+.head{font-family:var(--f-head);font-weight:700}
+.fila-click{cursor:pointer}
+.tabla thead th{font-size:.65rem;text-transform:uppercase;letter-spacing:.06em;color:var(--bs-secondary-color);background:var(--bs-tertiary-bg);font-weight:600;white-space:nowrap}
+.tabla td{vertical-align:middle}
+.card{--bs-card-border-color:var(--bs-border-color)}
+.nav-pills .nav-link{--bs-nav-link-color:var(--bs-secondary-color);font-size:.75rem}
+.nav-pills .nav-link.active{background:var(--side);color:#fff;font-weight:600}
+.form-control:focus,.form-select:focus{border-color:#f59e0b;box-shadow:0 0 0 .2rem rgba(245,158,11,.25)}
+.fld.bad .invalid-feedback{display:block}
+.fld.bad .chips{border-color:var(--bs-danger)!important}
+.toast{--bs-toast-font-size:.8125rem}
