@@ -54,7 +54,7 @@ y las librerías copiadas en `vendor/` (ahora vienen de npm).
 ## Integrantes del proyecto
 - Cabanillas Rojas Stefany Fiorella
 - Ochoa Uribe Luis Diego
-
+- Ladi José Villanueva Colonia
 
 
 
