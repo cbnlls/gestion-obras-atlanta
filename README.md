@@ -50,3 +50,10 @@ resumen económico (G.G./utilidad) sin pantalla que lo abriera, cuatro exportado
 (`libroAvance`, `libroCartas`, `libroPersonal`, `libroCalendario`), botón «Descargar» de la valorización (era un aviso),
 opciones de reglas financieras nunca configurables, estado «En elaboración», funciones sin uso, selectores CSS huérfanos
 y las librerías copiadas en `vendor/` (ahora vienen de npm).
+
+## Integrantes del proyecto
+- Cabanillas Rojas Stefany Fiorella
+
+
+
+
